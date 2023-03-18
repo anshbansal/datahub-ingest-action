@@ -6,4 +6,4 @@ echo "echo started at time=$time"
 echo "installing cli specified"
 pip install --upgrade "acryl-datahub==$2"
 
-datahub ingest -c "$1"
+datahub ingest -c "$GITHUB_WORKSPACE/$1"
